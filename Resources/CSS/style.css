@@ -1,0 +1,236 @@
+/* Universal */
+
+html{
+  font-family: Helvetica;
+  font-size: 18px;
+  background-color: white;
+  line-height: 1.4;
+}
+
+.container{
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Header */
+
+header{
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png") no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+nav{
+  max-width: 100%;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.menu ul{
+  margin-right: 1rem;
+}
+
+.menu ul li{
+  display: inline;
+  padding: 0 1rem;
+}
+
+.truncated-menu{
+  display: none;
+}
+
+@media only screen and (max-width: 960px){
+  header{
+    height: 22rem;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  header{
+    height: 17rem;
+    padding-top: 0;
+    background-position: 20%;
+  }
+  .menu{
+    display: none;
+  }
+  .truncated-menu{
+    display: inline;
+  }
+  .truncated-menu ul{
+    margin-right: 1rem;
+  }
+  .truncated-menu ul li{
+    display: inline;
+  }
+  .logo span{
+    display: none;
+  }
+}
+
+/* Main Banner */
+
+header .flex{
+  justify-content: flex-end;
+}
+
+.main-banner{
+  background-color: white;
+  padding: 0.75rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 1.2rem;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 960px){
+  .main-banner{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  h1{
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .main-banner{
+    margin-top: 8rem;
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  h1{
+    font-size: 1rem;
+  }
+}
+
+/* Company Description */
+
+.supporting{
+  justify-content: center;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  margin: 3rem;
+  width: 5rem;
+  justify-content: space-between;
+}
+
+.service img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon{
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 470px){
+  .supporting{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .service{
+    margin: 0.76rem;
+    height: auto;
+  }
+  .service div{
+    font-size: 0.77rem;
+  }
+}
+
+/* Information Section */
+
+.information{
+  justify-content: center;
+}
+
+.information .info{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.information .title{
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p{
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 470px){
+  .information{
+    flex-direction: column;
+    }
+  .information .info{
+    width: 100%;
+  }
+  .information .title{
+    max-width: 100%;
+    text-align: center;
+  }
+  .info p{
+    font-size: 0.77rem;
+    padding: 1rem 0;
+  }
+}
+
+/* Footer */
+
+footer{
+  background-color: azure;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 470px){
+  footer div{
+    display: none;
+  }
+  footer{
+    justify-content: center;
+  }
+}
